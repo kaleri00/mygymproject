@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IronCore Gym | Transform Your Body</title>
+    <meta name="description" content="IronCore Gym - Modern fitness center with world-class equipment, expert trainers, and flexible membership plans." />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header" id="home">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="/" class="logo">Iron<span>Core</span></a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#plans" class="nav-link">Plans</a></li>
+                    <li><a href="/contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1>Train Hard. <span>Stay Strong.</span></h1>
+                    <p>
+                        Welcome to IronCore Gym – your home for serious training, modern equipment,
+                        and a community that pushes you to be your best every single day.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#plans" class="btn primary-btn">View Membership Plans</a>
+                        <a href="/contact" class="btn secondary-btn">Book a Free Session</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Access</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+50</span>
+                            <span class="stat-label">Machines</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">+15</span>
+                            <span class="stat-label">Coaches</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-photo"></div>
+                    <div class="hero-overlay-card">
+                        <h3>Today&apos;s Motivation</h3>
+                        <p>"The body achieves what the mind believes."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>About <span>IronCore Gym</span></h2>
+                <p>
+                    IronCore Gym is designed for all fitness levels – from beginners to professional athletes.
+                    Our facility combines cutting-edge equipment with experienced trainers to help you reach
+                    your goals safely and efficiently.
+                </p>
+                <ul class="about-list">
+                    <li>State-of-the-art strength and cardio equipment</li>
+                    <li>Functional training zone and free weights</li>
+                    <li>Group classes: HIIT, Yoga, Spin, Boxing</li>
+                    <li>Certified personal trainers and nutrition guidance</li>
+                </ul>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <h3>Clean &amp; Safe</h3>
+                    <p>Daily sanitation routines and contactless check-in keep your training safe.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Community</h3>
+                    <p>Train with like-minded people who keep you motivated and accountable.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Results</h3>
+                    <p>Structured programs focused on measurable progress and real transformation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans Section -->
+    <section class="section plans" id="plans">
+        <div class="container">
+            <header class="section-header">
+                <h2>Membership <span>Plans</span></h2>
+                <p>Choose a plan that fits your lifestyle and fitness goals.</p>
+            </header>
+
+            <div class="plans-grid">
+                <!-- Basic Plan -->
+                <article class="plan-card">
+                    <h3>Basic</h3>
+                    <p class="plan-price">$19<span>/month</span></p>
+                    <ul class="plan-features">
+                        <li>Access: Mon–Fri, 8am–8pm</li>
+                        <li>Cardio &amp; strength area</li>
+                        <li>Locker room access</li>
+                        <li>1 free fitness assessment</li>
+                    </ul>
+                    <a href="/contact" class="btn plan-btn">Get Started</a>
+                </article>
+
+                <!-- Standard Plan -->
+                <article class="plan-card plan-featured">
+                    <div class="badge">Most Popular</div>
+                    <h3>Standard</h3>
+                    <p class="plan-price">$39<span>/month</span></p>
+                    <ul class="plan-features">
+                        <li>24/7 gym access</li>
+                        <li>All Basic features</li>
+                        <li>Group classes included</li>
+                        <li>2 personal training sessions</li>
+                    </ul>
+                    <a href="/contact" class="btn plan-btn primary-btn">Choose Standard</a>
+                </article>
+
+                <!-- Premium Plan -->
+                <article class="plan-card">
+                    <h3>Premium</h3>
+                    <p class="plan-price">$59<span>/month</span></p>
+                    <ul class="plan-features">
+                        <li>All Standard features</li>
+                        <li>Unlimited personal training</li>
+                        <li>Sauna &amp; recovery lounge</li>
+                        <li>Priority support &amp; nutrition plan</li>
+                    </ul>
+                    <a href="/contact" class="btn plan-btn">Go Premium</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="section cta">
+        <div class="container cta-container">
+            <div class="cta-text">
+                <h2>Ready to start your transformation?</h2>
+                <p>Join IronCore Gym today and get your first week completely free.</p>
+            </div>
+            <a href="/contact" class="btn primary-btn">Claim Free Week</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="/" class="logo">Iron<span>Core</span></a>
+                <p>Built for those who take their training seriously.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#plans" class="footer-link">Plans</a>
+                <a href="/contact" class="footer-link">Contact</a>
+            </div>
+            <p class="footer-copy">
+                &copy; <span id="year"></span> IronCore Gym. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

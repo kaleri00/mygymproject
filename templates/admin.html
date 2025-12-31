@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Contact Messages</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="admin-page">
+    <div class="admin-container">
+        <h1>Contact Messages</h1>
+        <a href="{{ url_for('index') }}" class="btn secondary-btn" style="margin-bottom: 1rem;">Back to Site</a>
+        
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Message</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for contact in contacts %}
+                <tr>
+                    <td>{{ contact['id'] }}</td>
+                    <td>{{ contact['name'] }}</td>
+                    <td>{{ contact['email'] }}</td>
+                    <td>{{ contact['phone'] }}</td>
+                    <td>{{ contact['message'] }}</td>
+                    <td>{{ contact['created_at'] }}</td>
+                </tr>
+                {% endfor %}
+                {% if not contacts %}
+                <tr>
+                    <td colspan="6" style="text-align: center;">No messages yet.</td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
