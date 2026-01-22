@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+ENV/
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Flask
+instance/
+.webassets-cache
+
+# Databases (if sensitive)
+instance/*.db
+database.db
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
